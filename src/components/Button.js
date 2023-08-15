@@ -1,10 +1,11 @@
 import React from 'react';
 
 function Button(props){
+    const {icon,text} = props;
     return (
         <button>
-            <span role="img">{props.icon}</span>
-            {props.text}
+            <span role="img">{icon}</span>
+            {text}
           </button>
     )
 }
